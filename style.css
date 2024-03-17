@@ -1,0 +1,40 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header img {
+    display: block; /* Menambahkan properti display block agar gambar dapat diatur */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Menengahkan gambar */
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

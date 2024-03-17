@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Penyampaian Materi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #444;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Hide the content initially */
+        #content {
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portal Materi</h1>
+</header>
+
+<nav>
+    <a href="#">Beranda</a>
+</nav>
+
+<div class="container">
+    <h2>Perkembangan Arsitektur Komputer</h2>
+    <!-- Button to reveal content -->
+    <button onclick="toggleContent()">Tampilkan Materi</button>
+    <!-- Content to be revealed -->
+    <div id="content">
+        <p>Arsitektur komputer telah mengalami perkembangan yang signifikan sejak awal konsep komputasi hingga saat ini. Berikut adalah gambaran umum perkembangan arsitektur komputer mulai dari sejarah hingga jenis-jenis arsitekturnya:</p>
+
+        <p>Sejarah Awal:</p>
+        <ol>
+            <li>Mesin-Mesin Awal: Konsep komputasi dimulai jauh sebelum era modern, dengan perangkat seperti abakus dan alat hitung mekanis seperti Mesin Hitung Pascal oleh Blaise Pascal dan Mesin Diferensial oleh Charles Babbage.</li>
+            <li>Z1-Z4: Zuse Z1-Z4, dikembangkan oleh Konrad Zuse pada tahun 1930-an dan 1940-an, adalah contoh awal dari apa yang bisa disebut sebagai komputer modern pertama. Mereka menggunakan tabung hampa udara untuk komputasi biner.</li>
+            <li>ENIAC: Dikembangkan selama Perang Dunia II, ENIAC (Electronic Numerical Integrator and Computer) adalah komputer elektronik pertama yang digunakan untuk tujuan umum. Ini adalah tonggak penting dalam sejarah komputasi.</li>
+        </ol>
+
+        <p>Era Transistor dan Integrasi Sirkuit:</p>
+        <ol>
+            <li>Transistor: Ditemukan pada tahun 1947 oleh Bell Labs, transistor menggantikan tabung vakum dalam desain komputer, menghasilkan komputer yang lebih kecil, lebih cepat, dan lebih andal.</li>
+            <li>PDP Series: Digital Equipment Corporation (DEC) memproduksi serangkaian komputer mini termasuk PDP-1, PDP-8, dan PDP-11. Mereka populer di bidang akademis dan penelitian.</li>
+            <li>Mainframe dan Minicomputer: IBM memperkenalkan banyak mainframe seperti IBM 360 series, yang menjadi populer di perusahaan besar dan lembaga pemerintah. Sementara itu, komputer mini seperti DEC PDP-8 dan PDP-11 digunakan di laboratorium dan universitas.</li>
+        </ol>
+
+        <p>Revolusi Mikroprosesor:</p>
+        <ol>
+            <li>Mikroprosesor: Dengan diperkenalkannya mikroprosesor pada tahun 1970-an, komputer menjadi lebih kecil, lebih murah, dan lebih mudah diakses oleh masyarakat umum. Mikroprosesor Intel 4004 adalah salah satu contoh awal.</li>
+            <li>Personal Computer (PC): IBM memperkenalkan IBM PC pada tahun 1981, yang menjadi standar de facto untuk komputer pribadi. Sistem operasi DOS dan kemudian Windows dari Microsoft menggiring popularitas PC.</li>
+        </ol>
+
+        <p>Arsitektur Modern:</p>
+        <ol>
+            <li>RISC vs. CISC: RISC (Reduced Instruction Set Computer) dan CISC (Complex Instruction Set Computer) adalah dua pendekatan utama dalam desain arsitektur prosesor. RISC menekankan instruksi sederhana yang dieksekusi dengan cepat, sedangkan CISC menggunakan instruksi kompleks.</li>
+            <li>Parallel Processing: Dengan meningkatnya kompleksitas tugas komputasi, banyak arsitektur modern menekankan paralelisme untuk meningkatkan kinerja. Ini termasuk multiprosesor simetris (SMP), cluster, dan komputer berkinerja tinggi (HPC).</li>
+            <li>Komputasi Terdistribusi dan Cloud: Dengan munculnya komputasi terdistribusi dan cloud, arsitektur komputer berkembang ke arah infrastruktur yang memungkinkan penyediaan layanan melalui internet.</li>
+            <li>Mobile and Embedded Systems: Perkembangan arsitektur komputer juga terjadi di domain mobile dan sistem terbenam, di mana perhatian diberikan pada efisiensi daya dan ukuran.</li>
+            <li>Mobile and Embedded Systems: Perkembangan arsitektur komputer juga terjadi di domain mobile dan sistem terbenam, di mana perhatian diberikan pada efisiensi daya dan ukuran.</li>
+        </ol>
+
+        <p>Dalam perkembangan arsitektur komputer, berbagai jenis arsitektur telah muncul dan berkembang, termasuk arsitektur von Neumann, Harvard, SIMD (Single Instruction, Multiple Data), MISD (Multiple Instruction, Single Data), MIMD (Multiple Instruction, Multiple Data), dan banyak lagi. Setiap jenis arsitektur memiliki karakteristik uniknya sendiri dan aplikasi yang cocok.</p>
+
+        <!-- Remaining content omitted for brevity -->
+
+    </div>
+</div>
+
+<div class="container">
+    <h2>Sistem Operasi Open Source</h2>
+    <!-- Button to reveal content -->
+    <button onclick="toggleOSContent()">Tampilkan Materi</button>
+    <!-- Content to be revealed -->
+    <div id="os-content" style="display: none;">
+        <p>Sistem Operasi Open Source merupakan sistem operasi yang kode sumbernya tersedia untuk umum dan dapat dimodifikasi, diperbaiki, dan disebarluaskan oleh siapa saja sesuai dengan ketentuan lisensi yang berlaku. Berikut adalah beberapa contoh sistem operasi open source terkenal:</p>
+
+        <p>Linux dan Varian Distronya:</p>
+        <ul>
+            <p>1. Karakteristik Linux:</p>
+            <li>Kode Sumber Terbuka: Linux adalah sistem operasi dengan kode sumber terbuka yang dapat diakses, dimodifikasi, dan didistribusikan oleh siapa pun sesuai dengan lisensi GNU General Public License (GPL).</li>
+            <li>Kustomisasi Tinggi: Pengguna memiliki kebebasan untuk menyesuaikan dan mengkonfigurasi Linux sesuai dengan kebutuhan mereka. Ini mencakup pemilihan lingkungan desktop, manajer paket, kernel, dan banyak lagi.</li>
+            <li>Kinerja Tinggi: Linux sering dipilih untuk digunakan pada server dan komputer khusus yang membutuhkan kinerja tinggi dan stabilitas.</li>
+            <li>Keamanan: Dengan basis kode yang luas dan pembaruan reguler, Linux sering dianggap lebih aman daripada sistem operasi komersial.</li>
+        </ul>
+
+        <ul>
+            <p>2. Distro Linux:</p>
+            <li>Ubuntu: Fokus pada kenyamanan pengguna dan kemudahan penggunaan, cocok untuk pengguna baru dan pengguna lanjutan.</li>
+            <li>Fedora: Dikembangkan oleh komunitas, berfokus pada teknologi terbaru dan keamanan.</li>
+            <li>Debian: Terkenal karena stabilitasnya, digunakan sebagai dasar untuk banyak distribusi lainnya.</li>
+            <li>CentOS: Berfokus pada stabilitas dan keandalan, sering digunakan untuk server.</li>
+            <li>Arch Linux: Menyediakan pengguna dengan kontrol penuh atas sistem mereka dan fokus pada kesederhanaan.</li>
+        </ul>
+
+        <ul>
+            <p>3. Keutamaan Linux:</p>
+            <li>Ketersediaan: Linux tersedia secara gratis dan legal untuk diunduh dan digunakan oleh siapa pun.</li>
+            <li>Komunitas yang Kuat: Ada komunitas yang besar dan bersemangat di sekitar Linux yang terus berkontribusi dalam pengembangan, dukungan, dan dokumentasi.</li>
+            <li>Kebanyakan Server: Linux mendominasi pasar server, digunakan oleh perusahaan-perusahaan besar di seluruh dunia untuk infrastruktur mereka.</li>
+            <li>Kompatibilitas Perangkat Luar Biasa: Karena ketersediaan kode sumber terbuka, Linux mendukung berbagai arsitektur perangkat keras dan perangkat lunak.</li>
+        </ul>
+
+        <p>Android:</p>
+        <ul>
+            <p>1. Karakteristik Android:</p>
+            <li>Berbasis Linux: Android didasarkan pada kernel Linux, tetapi dirancang khusus untuk perangkat seluler, tablet, dan perangkat pintar lainnya.</li>
+            <li>Kode Terbuka: Sebagian besar Android bersifat open source, dengan banyak kode yang tersedia secara publik di bawah proyek Android Open Source Project (AOSP).</li>
+            <li>Kustomisasi dan Ekosistem Aplikasi yang Kaya: Pengembang dapat membuat aplikasi dan mengadaptasikan Android sesuai kebutuhan mereka, dengan akses ke toko aplikasi Google Play yang luas.</li>
+            <li>Integrasi Google: Android dikembangkan dan didukung secara aktif oleh Google, yang menghadirkan fitur-fitur Google, seperti integrasi Gmail, Google Maps, dan lainnya.</li>
+            <li>Penyimpanan Cloud: Android terintegrasi dengan layanan cloud Google, seperti Google Drive, untuk menyinkronkan data dan memberikan akses ke penyimpanan online.</li>
+        </ul>
+
+        <ul>
+            <p>2. Keutamaan Android:</p>
+            <li>Ketersediaan Perangkat yang Luas: Android tersedia di berbagai merek dan model perangkat, mulai dari ponsel pintar hingga tablet dan perangkat wearable.</li>
+            <li>Ekosistem Aplikasi yang Kaya: Google Play Store menyediakan akses ke jutaan aplikasi, mulai dari produktivitas hingga permainan, memungkinkan pengguna untuk menyesuaikan perangkat mereka sesuai kebutuhan.</li>
+            <li>Integrasi dengan Layanan Google: Pengguna Android dapat menikmati integrasi yang mulus dengan layanan Google, termasuk Gmail, Google Maps, Google Drive, dan lainnya.</li>
+            <li>Pembaharuan Berkala: Google secara teratur merilis pembaruan keamanan dan fungsionalitas untuk sistem operasi Android, meskipun implementasi pembaharuan tersebut terkadang bergantung pada produsen perangkat dan operator jaringan.</li>
+        </ul>
+
+        <p>Keduanya, Linux dan Android, merupakan contoh yang kuat dari keberhasilan sistem operasi open source dalam berbagai konteks penggunaan, dari infrastruktur server hingga perangkat seluler. Kebebasan, kustomisasi, dan dukungan komunitas adalah pilar-pilar utama dari keunggulan mereka.</p>
+
+        <!-- Additional content about open source operating systems can be added here -->
+    </div>
+</div>
+
+
+<footer>
+    <p>Hak Cipta &copy; 2024 Hari Rizky Ardiantoro.</p>
+</footer>
+
+<!-- JavaScript to toggle content visibility -->
+<script>
+    function toggleContent() {
+        var content = document.getElementById("content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    function toggleOSContent() {
+        var osContent = document.getElementById("os-content");
+        if (osContent.style.display === "none") {
+            osContent.style.display = "block";
+        } else {
+            osContent.style.display = "none";
+        }
+    }
+</script>
+
+
+</body>
+</html>

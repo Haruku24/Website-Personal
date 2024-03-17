@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #826558;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Set height to 100% of viewport height */
+            overflow: hidden; /* Hide overflow to prevent scroll bars */
+        }
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Scale the image while preserving aspect ratio */
+        }
+        .text-over-image {
+            position: absolute;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Arial Black', sans-serif;
+        }
+        .navigation {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+        .navigation button {
+            margin-right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <button onclick="location.href='profile.html'">Profile</button>
+        <button onclick="location.href='portal.html'">Portal</button>
+        <button onclick="location.href='about.html'">About</button>
+    </div>
+    <main>
+        <div class="container">
+            <img src="Gambar/Gambar1.jpg" alt="Gambar">
+            <!-- Mengubah teks agar menggunakan font family 'Arial Black' -->
+            <div class="text-over-image" style="font-size: 3em;">Selamat Datang Wahai Pengunjung Yang Terhormat!</div>
+        </div>
+    </main>
+</body>
+</html>
