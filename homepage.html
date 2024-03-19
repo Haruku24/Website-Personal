@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="homepage.css">
     <style>
         body {
             margin: 0;
@@ -14,13 +15,17 @@
         .container {
             position: relative;
             width: 100%;
-            height: 100vh; /* Set height to 100% of viewport height */
-            overflow: hidden; /* Hide overflow to prevent scroll bars */
+            height: 100vh;
+            overflow: hidden;
         }
-        .container img {
+        /* Style the video to cover the entire container */
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Scale the image while preserving aspect ratio */
+            object-fit: cover;
         }
         .text-over-image {
             position: absolute;
@@ -31,12 +36,13 @@
             font-size: 2em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-family: 'Arial Black', sans-serif;
+            z-index: 1; /* Ensure the text is above the video */
         }
         .navigation {
             position: absolute;
             top: 20px;
             left: 20px;
-            z-index: 1;
+            z-index: 2; /* Ensure the navigation is above the video */
         }
         .navigation button {
             margin-right: 10px;
@@ -57,8 +63,12 @@
     </div>
     <main>
         <div class="container">
-            <img src="Gambar/Gambar1.jpg" alt="Gambar">
-            <!-- Mengubah teks agar menggunakan font family 'Arial Black' -->
+            <!-- Add the video element with autoplay and loop attributes -->
+            <video autoplay loop muted>
+                <source src="Video/Video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Text overlay -->
             <div class="text-over-image" style="font-size: 3em;">Selamat Datang Wahai Pengunjung Yang Terhormat!</div>
         </div>
     </main>
