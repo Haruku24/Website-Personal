@@ -38,6 +38,17 @@
             font-family: 'Arial Black', sans-serif;
             z-index: 1; /* Ensure the text is above the video */
         }
+        .gif-icon {
+            position: absolute;
+            top: 25%; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+            border-radius: 50%; /* Create a circular shape */
+            overflow: hidden; /* Ensure the GIF stays within the circle */
+            z-index: 2; /* Ensure the GIF icon is above the video and text */
+        }
         .navigation {
             position: absolute;
             top: 20px;
@@ -68,6 +79,10 @@
                 <source src="Video/Video2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <!-- GIF Icon -->
+            <div class="gif-icon">
+                <img src="Gif/Gif1.gif" style="width: 100%; height: 100%; object-fit: cover;" alt="Icon">
+            </div>
             <!-- Text overlay -->
             <div class="text-over-image" style="font-size: 3em;">Selamat Datang Wahai Pengunjung Yang Terhormat!</div>
         </div>
