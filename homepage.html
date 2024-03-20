@@ -37,17 +37,21 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-family: 'Arial Black', sans-serif;
             z-index: 1; /* Ensure the text is above the video */
+            text-align: center; /* Center-align text */
         }
         .gif-icon {
             position: absolute;
-            top: 25%; /* Adjust as needed */
+            top: 20%;
             left: 50%;
-            transform: translateX(-50%);
-            width: 100px; /* Adjust size as needed */
-            height: 100px; /* Adjust size as needed */
+            transform: translate(-50%, -50%);
+            width: 15vw; /* Responsive width */
+            height: 15vw; /* Responsive height */
+            max-width: 100px; /* Maximum width */
+            max-height: 100px; /* Maximum height */
             border-radius: 50%; /* Create a circular shape */
             overflow: hidden; /* Ensure the GIF stays within the circle */
             z-index: 2; /* Ensure the GIF icon is above the video and text */
+            border: 4px solid rgba(255, 255, 255, 0.5); /* Border with transparency */
         }
         .navigation {
             position: absolute;
